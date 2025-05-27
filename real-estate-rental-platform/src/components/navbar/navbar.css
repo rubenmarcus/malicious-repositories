@@ -1,0 +1,101 @@
+.line {
+  display: inline-block;
+  width: 1px;
+  height: 24px;
+  background-color: var(--gray-150);
+  margin-right: 100px;
+}
+
+.nav-link {
+  color: white;
+  letter-spacing: 0.3px;
+}
+
+.nav-link:hover {
+  color: #a8a8a8;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  border-radius: 25px;
+  position: relative;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.navbar-toggler-icon::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: -12px;
+  background-color: white;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  bottom: -12px;
+  background-color: white;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.navbar .container div .fa-heart {
+  color: white;
+  font-size: 20px;
+  position: relative;
+}
+
+.navbar .container div .fa-heart::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60%;
+  height: 60%;
+  top: -1px;
+  right: -3px;
+  background-color: red;
+  border: 3px solid #121420;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.fa-heart:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  padding: 7px 32px;
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+@media (max-width: 992px) {
+  .order {
+    order: -1;
+  }
+}

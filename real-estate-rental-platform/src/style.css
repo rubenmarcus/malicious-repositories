@@ -1,0 +1,626 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121420;
+}
+
+:root {
+    --gray-150: #3d4467;
+}
+
+.gray-50 {
+    color: #c3c5ce;
+}
+
+.gray-90 {
+    color: #5e6379;
+}
+
+.gray-100 {
+    color: #545b79;
+}
+
+.bg-black-100 {
+    background-color: #1b1f33;
+}
+
+.title {
+    width: fit-content;
+    max-width: 710px;
+    margin: 0 0 30px;
+    font-size: 48px;
+    color: white;
+}
+
+.w-min-content {
+    width: min-content;
+}
+
+/* Start swiper style */
+
+.swiper {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 35px;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    margin-right: 15px;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-pagination-bullet {
+    background-color: white;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color: rgb(18 20 32 / 50%);
+    border-radius: 50%;
+}
+
+.swiper-button-next:after {
+    margin-right: 15px;
+}
+
+/* End swiper style */
+
+/* start Loading Style */
+
+.loading::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -10%;
+    width: 150px;
+    height: 150px;
+    background-color: #356df6;
+    border-radius: 50%;
+    filter: blur(12rem);
+    z-index: -999;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-filter: blur(12rem);
+}
+
+.loading .container div h1 {
+    color: white;
+}
+
+.loading .container .features {
+    width: inherit;
+}
+
+.loading .container div .cards {
+    position: relative;
+    left: calc(55% - 60px);
+    transform: translateX(-50%);
+    width: fit-content;
+    display: flex;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.loading .container div .cards .card {
+    width: fit-content;
+}
+
+.loading .container div .cards .card:first-child {
+    left: -25px;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+}
+
+.loading .container div .cards .card:last-child {
+    position: absolute;
+    top: 25px;
+    right: -120px;
+    box-shadow: -3px -4px 11px 5px #00000059;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+
+.loading .container div .cards .card .card-body img {
+    max-width: 190px;
+}
+
+/* End loading style */
+
+/* Start partners style */
+
+.partners .container {
+    gap: 93px;
+    margin-top: 7rem;
+}
+/* End partners style */
+
+/* Start properties style */
+.properties .container {
+    margin-top: 5rem;
+}
+.properties .container .tabs {
+    gap: 16px;
+}
+.properties .tabs button {
+    padding: 5px 14px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #c3c5ce;
+}
+
+.properties .container .tabs button.active {
+    color: white;
+}
+
+.like {
+    position: absolute;
+    color: white;
+    background-color: rgb(18 20 32 / 75%);
+    padding: 10px;
+    border-radius: 50%;
+    top: 10px;
+    right: 10px;
+}
+
+.card .card-body div img {
+    max-width: 256px;
+}
+
+.card .card-body div div h6 {
+    font-size: 0.9rem;
+}
+
+.card .card-body div div span {
+    font-size: 14px;
+}
+
+.card .card-body p {
+    font-size: 14px;
+}
+
+/* End properties style */
+
+/* Start about us */
+.about .container {
+    gap: 50px;
+    margin-top: 7rem;
+    overflow-x: clip;
+}
+
+.about .container div:last-child {
+    row-gap: 0.5rem;
+}
+
+.about .container div p {
+    font-size: 14px;
+}
+
+.about .container div div {
+    width: fit-content;
+    height: fit-content;
+}
+
+.about .container div div div {
+    position: relative;
+}
+
+.about .container div div div img {
+    width: 230px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about .container div div div::before {
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 150px;
+    background-color: #0000004a;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.about .container div div:first-child div:first-child img:first-child,
+.about .container div div:last-child div:last-child img:last-child {
+    width: 150px;
+}
+
+.about .container div div:first-child div:first-child::before {
+    content: "California";
+}
+
+.about .container div div:first-child div:last-child::before {
+    content: "Norway";
+}
+
+.about .container div div:last-child div:first-child::before {
+    content: "Portugal";
+}
+.about .container div div:last-child div:last-child::before {
+    content: "Brazil";
+}
+
+.about .container div div:first-child div:last-child::after {
+    content: "8.9% Appreciation";
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    top: -10%;
+    left: 70%;
+    transform: translateX(-50%);
+    background-color: #356df6;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+    border-radius: 20px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.about .container div div:last-child div:first-child::after {
+    content: "10.2% Rent Yield";
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    bottom: -10%;
+    right: 70%;
+    transform: translateX(50%);
+    background-color: #356df6;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+    border-radius: 20px;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+/* End about us */
+
+/* Start developers */
+
+.developers {
+    margin-top: 8rem;
+    overflow-x: clip;
+}
+
+.developers .mySwiper .swiper-slide div img {
+    height: 100%;
+}
+
+.developers .swiper .swiper-slide div {
+    border: 1px solid var(--gray-150);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.developers .mySwiper .swiper-slide div h6 {
+    width: max-content;
+}
+
+/* End developers */
+
+/* Start join */
+
+.join .container {
+    margin-top: 7rem;
+}
+
+.join .mySwiper .swiper-wrapper {
+    align-items: stretch;
+}
+
+.join .mySwiper .swiper-wrapper .swiper-slide {
+    height: auto;
+}
+
+.join .mySwiper .swiper-wrapper .swiper-slide {
+    border: 1px solid #3d4467;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.join .mySwiper div img {
+    max-width: 204px;
+    max-height: 68px;
+}
+
+/* End join */
+
+/* Start subscribe */
+
+.subscribe .container {
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-top: 3rem;
+}
+
+.subscribe .container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #1b1f33;
+    border-radius: 12px;
+    z-index: -10;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.subscribe .container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(./images/logo/Vector.png),
+        url(./images/logo/Vector-1.png);
+    background-repeat: no-repeat;
+    background-position: bottom right 30px, top 10px left;
+    z-index: -1;
+}
+
+.subscribe .container div {
+    border: 1px solid #545b79;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.subscribe .container div input:focus {
+    outline: none;
+}
+
+/* End subscribe */
+
+/* Start footer */
+
+footer {
+    border-top: 1px solid #3d4467;
+    overflow-x: clip;
+}
+
+footer .container div a {
+    text-decoration: none;
+}
+
+footer .container div ul h6 {
+    letter-spacing: 0.4px;
+    font-size: 14px;
+}
+
+footer .container div ul li {
+    color: white;
+    list-style: none;
+    font-weight: 100;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+footer .container div ul li:hover {
+    color: #a8a8a8;
+}
+
+footer .container div:has(img) {
+    gap: 30px;
+}
+
+footer .container div:has(p a) {
+    border-top: 1px solid #1b1f33;
+}
+
+footer .container div ul:first-child {
+    margin-right: 50px;
+}
+
+footer .container div p {
+    font-size: 14px;
+}
+
+footer .container div ul li:nth-child(1),
+footer .container div ul li:nth-child(2) {
+    margin-bottom: 7px;
+}
+
+footer div span {
+    width: 100%;
+    height: 1px;
+    background-color: #1b1f33;
+}
+
+/* End footer */
+
+/* Start media query */
+
+/* Small */
+@media (max-width: 768px) {
+    .loading .container .img-card {
+        width: 100%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .about .container div,
+    .about .container div div {
+        width: 100%;
+    }
+
+    .about .container div div:first-child div:first-child,
+    .about .container div div div:last-child {
+        width: 100%;
+    }
+
+    .about .container div:last-child div img {
+        width: calc(100% - 0.5rem);
+    }
+
+    .about .container div div:first-child div:first-child img:first-child,
+    .about .container div div:last-child div:last-child img:last-child {
+        width: calc(100% - 0.5rem);
+    }
+
+    .about .container div div div::before {
+        width: calc(100% - 0.5rem);
+    }
+
+    .developers .mySwiper .swiper-slide div img {
+        width: 45px;
+    }
+
+    .developers .mySwiper .swiper-slide div h6 {
+        font-size: 12px;
+    }
+
+    .subscribe .container div {
+        width: 100%;
+    }
+
+    .subscribe .container h1 {
+        font-size: 32px;
+    }
+}
+
+/* medium */
+
+@media (min-width: 768px) {
+    .loading .container .img-card {
+        width: 50%;
+    }
+
+    .loading .container div h1 {
+        font-size: 62px;
+    }
+
+    .properties .container .tabs .mySwiper {
+        width: 75%;
+    }
+
+    .about .container div div:first-child div:first-child:before,
+    .about .container div div:last-child div:first-child:before {
+        width: calc(100% - 0.5rem);
+    }
+
+    .subscribe .container div {
+        width: 50%;
+    }
+    .subscribe .container {
+        margin-bottom: 7rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .loading .container div h1 {
+        font-size: 40px;
+    }
+    .properties .container .tabs .mySwiper {
+        width: 100%;
+    }
+}
+
+/* Large */
+
+@media (min-width: 1198px) {
+    .loading .container div .cards .card:last-child {
+        right: -150px;
+    }
+
+    .loading .container div .cards .card .card-body img {
+        max-width: 220px;
+    }
+
+    .about .container div:first-child p {
+        max-width: 75%;
+    }
+
+    .join .container div:nth-child(2),
+    .join .container div:nth-child(4) {
+        margin-top: 65px;
+    }
+
+    .join .container div:nth-child(1),
+    .join .container div:nth-child(3) {
+        margin-bottom: 65px;
+    }
+}
+
+/* End media query */
