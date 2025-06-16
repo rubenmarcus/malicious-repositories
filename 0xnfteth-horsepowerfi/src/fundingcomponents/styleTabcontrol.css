@@ -1,0 +1,296 @@
+.Toptabcontrol {
+  display: flex !important;
+  flex-direction: column !important;
+
+  .Tabcontrol {
+    display: flex !important;
+    justify-content: center !important;
+    position: relative !important;
+    top: 100px !important;
+  }
+  .yourCode {
+    position: relative !important;
+    left: 30px !important;
+    color: white !important;
+    display: flex !important;
+    justify-content: center !important;
+    position: relative !important;
+    top: 180px !important;
+    color: rgb(139, 56, 228) !important;
+    font-size: 20px !important;
+    .codeBox {
+      align-items: center !important;
+      display: flex !important;
+      justify-content: center !important;
+      width: 290px !important;
+      height: 50px !important;
+      background-color: #131313 !important;
+      border-radius: 110px !important;
+      .codeGroup {
+        display: flex !important;
+        background-repeat: no-repeat !important;
+      }
+      .codeBG {
+        position: relative;
+        top: 7px;
+        color: white !important;
+        background-repeat: no-repeat !important;
+        width: 50px !important;
+        height: 50px !important;
+        right: 40px;
+        background-size: 100% 100%;
+        background-image: url(../images/Yourcode.png) !important;
+      }
+      .codeBG i {
+        position: relative !important;
+        top: 7px !important;
+        left: 10px !important;
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        padding: 10px !important;
+        border-radius: 10px !important;
+        font-size: 10px;
+      }
+      .codeBG i:hover {
+        cursor: pointer !important;
+      }
+      .codeBG:hover .tooltiptext {
+        visibility: visible !important;
+      }
+      .tooltiptext {
+        font-family: RNS Sanz !important;
+        visibility: hidden !important;
+        width: 120px !important;
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        color: #fff !important;
+        text-align: center !important;
+        border-radius: 6px !important;
+        padding: 5px 0 !important;
+        position: absolute !important;
+        z-index: 1 !important;
+      }
+    }
+    .walletBox {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      gap: 50px;
+      /* padding-left: 80px; */
+    }
+    .walletBox img {
+      position: relative !important;
+    }
+    .codeBox p {
+      white-space: nowrap !important;
+      width: 270px !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      padding-top: 18px !important;
+      font-family: RNS Sanz !important;
+      font-weight: 700;
+    }
+  }
+  .yourCode img {
+    width: 58px;
+  }
+  .tabButton {
+    width: 275px !important;
+    height: 52px !important;
+    border-radius: 8px !important;
+    border: 1px solid #3a245e !important;
+    gap: 10px !important;
+    font-family: RNS Sanz !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 19px !important;
+    letter-spacing: 0em !important;
+  }
+  .flexWalBtn {
+    width: 588px !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .conWalBtn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    bottom: 550px !important;
+    border-radius: 8px !important;
+    background-image: linear-gradient(
+      to right,
+      #7335d6,
+      #7936d9,
+      #8b38e4,
+      #963aea
+    );
+    width: 468px !important;
+    height: 51px !important;
+    font-family: RNS Sanz !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 19px !important;
+    letter-spacing: 0em !important;
+    text-align: left !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+  .conWalBtn:hover {
+    cursor: pointer !important;
+    color: white !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Toptabcontrol {
+    display: flex !important;
+    flex-direction: column !important;
+
+    .Tabcontrol {
+      display: flex !important;
+      justify-content: center !important;
+      position: relative !important;
+      top: 100px !important;
+    }
+    .tabButton {
+      width: 156px !important;
+      height: 29px !important;
+      border-radius: 8px !important;
+      border: 1px solid #3a245e !important;
+      gap: 10px !important;
+      font-family: RNS Sanz !important;
+      font-size: 10px !important;
+      font-weight: 700 !important;
+      line-height: 19px !important;
+      letter-spacing: 0em !important;
+    }
+    .conWalBtn {
+      width: 300px !important;
+      bottom: 300px !important;
+    }
+    .yourCode {
+      top: 110px !important;
+      margin-right: 40px;
+      .codeBox {
+        width: 220px !important;
+        height: 40px !important;
+        .codeBG {
+          width: 40px !important;
+          height: 40px !important;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          position: relative !important;
+          top: 4px;
+        }
+        .codeBG i {
+          position: relative !important;
+          top: 0px !important;
+          left: 7px !important;
+          background-color: rgba(0, 0, 0, 0.2) !important;
+          padding: 6px !important;
+          border-radius: 6px !important;
+          font-size: 10px;
+        }
+        .codeBG:hover .tooltiptext {
+          font-size: 12px;
+          /* visibility: visible !important; */
+        }
+        .tooltiptext {
+          width: 70px !important;
+        }
+      }
+      .codeBox p {
+        white-space: nowrap !important;
+        width: 180px !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        padding-top: 14px !important;
+        font-size: 12px;
+      }
+    }
+    .yourCode img {
+      width: 30px;
+      position: relative !important;
+      left: -20px;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .Toptabcontrol {
+    display: flex !important;
+    flex-direction: column !important;
+
+    .Tabcontrol {
+      display: flex !important;
+      justify-content: center !important;
+      position: relative !important;
+      top: 100px !important;
+    }
+    .tabButton {
+      width: 156px !important;
+      height: 29px !important;
+      border-radius: 8px !important;
+      border: 1px solid #3a245e !important;
+      gap: 10px !important;
+      font-family: RNS Sanz !important;
+      font-size: 10px !important;
+      font-weight: 700 !important;
+      line-height: 19px !important;
+      letter-spacing: 0em !important;
+    }
+    .conWalBtn {
+      width: 252px !important;
+      height: 34px !important;
+      bottom: 200px !important;
+      font-family: RNS Sanz;
+      font-size: 13px !important;
+      font-weight: 700;
+      line-height: 12px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .yourCode {
+      top: 110px !important;
+      margin-right: 40px;
+      .codeBox {
+        width: 220px !important;
+        height: 40px !important;
+        .codeBG {
+          width: 40px !important;
+          height: 40px !important;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          position: relative !important;
+          top: 4px;
+        }
+        .codeBG i {
+          position: relative !important;
+          top: 0px !important;
+          left: 7px !important;
+          background-color: rgba(0, 0, 0, 0.2) !important;
+          padding: 6px !important;
+          border-radius: 6px !important;
+          font-size: 10px;
+        }
+        .codeBG:hover .tooltiptext {
+          font-size: 12px;
+          /* visibility: visible !important; */
+        }
+        .tooltiptext {
+          width: 70px !important;
+        }
+      }
+      .codeBox p {
+        white-space: nowrap !important;
+        width: 180px !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        padding-top: 14px !important;
+        font-size: 12px;
+      }
+    }
+    .yourCode img {
+      width: 30px;
+      position: relative !important;
+      left: -20px;
+    }
+  }
+}

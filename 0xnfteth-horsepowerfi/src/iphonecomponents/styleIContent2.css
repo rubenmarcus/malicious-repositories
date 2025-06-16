@@ -1,0 +1,174 @@
+.IContent2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .topTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    .title {
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .title1 {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    #line {
+      width: 80px;
+      height: 1px;
+      position: relative;
+      top: 12px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+  }
+  .topText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+  }
+  #letter {
+    font-family: RNS Sanz;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 312px;
+  }
+  .imgTitle {
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .GameImage {
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    width: 312px;
+    height: 312px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 5px;
+    left: 6px;
+
+    .boldText {
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      position: relative !important;
+      left: 33px !important;
+      align-items: center !important;
+      color: rgba(255, 255, 255, 1);
+    }
+    .lineText {
+      max-width: 240px !important;
+      position: relative !important;
+      left: 33px !important;
+      top: 10px !important;
+      font-family: RNS Sanz;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .bottomBtn:hover {
+      cursor: pointer;
+      background-image: linear-gradient(
+        to right,
+        rgba(95, 61, 255, 0.7),
+        rgba(192, 61, 255, 1)
+      );
+    }
+    .bottomBtn {
+      display: flex !important;
+      position: relative !important;
+      top: 70px;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 263px !important;
+      height: 47px !important;
+      border-radius: 10px !important;
+      color: white;
+      text-align: center !important;
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 1),
+        rgba(95, 61, 255, 0.7)
+      );
+    }
+    .bottomBtn2:before {
+      backdrop-filter: (17px); /* Adjust the blur radius as needed */
+      position: absolute;
+      display: block;
+      content: "";
+      border-radius: 15px;
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      z-index: -100;
+    }
+    .bottomBtn2 {
+      z-index: 10;
+      display: flex !important;
+      position: relative !important;
+      top: 70px;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 289px !important;
+      height: 47px !important;
+      border-radius: 10px !important;
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center !important;
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      border: #5f3dff 1px solid;
+    }
+    .bottomBtn2:hover {
+      cursor: pointer;
+      color: white;
+    }
+
+    .buttonWrap {
+      display: flex !important;
+      justify-content: center !important;
+      margin-top: 20px;
+    }
+  }
+}

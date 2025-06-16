@@ -1,0 +1,220 @@
+.stakesettingModal {
+  .modal-content {
+    background-color: #171418 !important;
+    border-radius: 22px !important;
+    width: 450px !important;
+    /* margin-left: 30px; */
+  }
+  .modal-title {
+    color: white !important;
+    position: relative !important;
+    left: 130px;
+    font-family: RNS Sanz;
+    font-size: 30px !important;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 10px;
+  }
+  .modal-header {
+    border-bottom: 1px solid #c03dff;
+  }
+  .modal-footer {
+    justify-content: center !important;
+    border-top: none !important;
+    margin-left: 10px !important;
+    gap: 30px !important;
+  }
+  .btn {
+    justify-content: none;
+    padding: 15px 50px;
+    font-family: RNS Sanz !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .btn-primary {
+    border: 1px solid #9739ea;
+    --bs-btn-hover-bg: #4a1d75 !important;
+    --bs-btn-bg: #9739ea !important;
+    --bs-btn-hover-border-color: #7636d7 !important;
+    --bs-btn-active-bg: #9739ea !important;
+  }
+  .middleText {
+    color: rgba(255, 255, 255, 0.4) !important;
+    display: flex !important;
+    flex-direction: column;
+    font-family: RNS Sanz;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    gap: 20px;
+  }
+  .modal-body {
+    padding: 30px !important;
+  }
+}
+@media screen and (min-width: 542px) and (max-width: 670px) {
+  .stakesettingModal {
+    .modal-content {
+      width: 350px !important;
+      height: 300px !important;
+    }
+    .modal-content {
+      margin-left: 30px !important;
+      position: relative;
+      left: 50px;
+    }
+    .modal-title {
+      font-size: 25px !important;
+      left: 90px !important;
+    }
+    .btn {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+    .btn-primary {
+      position: relative;
+      bottom: 110px;
+    }
+    .btn-danger {
+      position: relative;
+      bottom: -20px;
+    }
+    .middleText {
+      gap: 10px !important;
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 542px) {
+  .stakesettingModal {
+    .modal-content {
+      width: 300px !important;
+      height: 290px !important;
+    }
+    .modal-content {
+      margin-left: 60px !important;
+      position: relative;
+      left: 50px;
+    }
+    .modal-title {
+      font-size: 20px !important;
+      left: 80px !important;
+    }
+    .btn {
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .btn-primary {
+      position: relative;
+      bottom: 100px;
+    }
+    .btn-danger {
+      position: relative;
+      bottom: -26px;
+    }
+    .middleText {
+      font-size: 13px !important;
+      gap: 0px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 440px) and (max-width: 480px) {
+  .stakesettingModal {
+    .modal-content {
+      width: 220px !important;
+      height: 300px !important;
+    }
+    .modal-content {
+      margin-left: 70px !important;
+      position: relative;
+      left: 50px;
+    }
+    .modal-title {
+      font-size: 20px !important;
+      left: 35px !important;
+    }
+    .btn {
+      text-align: center;
+      width: 100%;
+      padding: 8px;
+    }
+
+    .btn-primary {
+      position: relative;
+      bottom: 110px;
+    }
+    .btn-danger {
+      position: relative;
+      bottom: -16px;
+    }
+
+    .middleText {
+      font-size: 13px !important;
+      gap: 0px !important;
+    }
+  }
+}
+@media screen and (max-width: 440px) {
+  .stakesettingModal {
+    .modal-content {
+      width: 160px !important;
+      height: 200px !important;
+    }
+    .modal-content {
+      margin-left: 70px !important;
+      position: relative;
+      left: 50px;
+    }
+    .modal-title {
+      font-size: 18px !important;
+      left: 5px !important;
+    }
+    .btn {
+      text-align: center;
+      width: 100%;
+      padding: 1px;
+      font-size: 9px !important;
+    }
+
+    .btn-primary {
+      position: relative;
+      bottom: 120px;
+    }
+    .btn-danger {
+      position: relative;
+      bottom: 30px;
+    }
+    .middleText {
+      position: relative;
+      bottom: 20px;
+      font-size: 8px !important;
+      gap: 0px;
+    }
+    .middleText {
+      font-size: 8px !important;
+      gap: 0px !important;
+      line-height: 10px;
+    }
+  }
+}
+@media screen and (max-width: 363px) {
+  .modal-content {
+    left: 20px !important;
+  }
+}
+@media screen and (max-width: 300px) {
+  .modal-content {
+    left: -11px !important;
+  }
+}

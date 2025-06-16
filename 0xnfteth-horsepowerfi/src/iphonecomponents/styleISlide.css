@@ -1,0 +1,98 @@
+.IphoneContent {
+  width: 100%;
+  background: #191919;
+  overflow-x: hidden;
+  .Iphoneslideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 360px;
+    #slideL {
+      position: relative;
+      left: -44px;
+      bottom: 336px;
+      z-index: 50;
+      width: 28px;
+    }
+    #lineL {
+      height: 300px;
+      bottom: 550px;
+      max-height: 220px;
+      position: relative;
+      border-width: 2px;
+      border-style: solid;
+      border-top: none;
+      border-bottom: none;
+      border-image: linear-gradient(
+        to bottom,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+      border-image-slice: 1;
+      z-index: 70;
+    }
+    #slideR {
+      position: relative;
+      bottom: 336px;
+      float: right;
+      right: -45px;
+      width: 28px;
+      z-index: 50;
+    }
+    #slideLBtn {
+      z-index: 100;
+      bottom: 334px;
+      position: relative;
+      left: 52px;
+      width: 40px;
+    }
+    #slideLBtn:hover {
+      cursor: pointer;
+    }
+
+    #slideRBtn {
+      z-index: 200;
+      bottom: 248px;
+      float: right;
+      position: relative;
+      right: 52px;
+      width: 40px;
+    }
+    #slideRBtn {
+      cursor: pointer;
+    }
+    .slideshowSlider {
+      white-space: nowrap;
+      transition: ease 1000ms;
+    }
+
+    .slideHorse {
+      background-size: 100% 100%;
+      display: inline-block;
+      height: 360px;
+      width: 100%;
+      background-repeat: no-repeat;
+    }
+    .slideshowDots {
+      position: relative;
+      bottom: 70px;
+      text-align: center;
+    }
+    .slideshowDot {
+      display: inline-block;
+      height: 10px;
+      width: 50px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin: 15px 7px 0px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .slideshowDot.active {
+      background-color: rgba(0, 0, 0, 1);
+    }
+    .slideTools {
+      height: 0px;
+    }
+  }
+}

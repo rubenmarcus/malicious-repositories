@@ -1,0 +1,92 @@
+.Munityprog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+  .topTitle {
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+    .text {
+      display: flex;
+      gap: 10px;
+    }
+    .title {
+      font-family: RNS Sanz;
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 43px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .title1 {
+      color: rgba(255, 255, 255, 1);
+    }
+    .title2 {
+      color: rgba(95, 61, 255, 1);
+    }
+  }
+
+  .bottomImg {
+    position: relative;
+    top: 70px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+  }
+
+  .daoImg {
+    width: 100%;
+    height: 564px;
+
+    display: flex;
+    flex-direction: column;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .centerTitle1 {
+    color: white;
+    font-family: RNS Sanz;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .centerTitle2 {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width: 500px;
+  }
+  .bottomTitle:hover {
+    cursor: pointer;
+    color: #5f3dff !important;
+    background-color: antiquewhite;
+    font-weight: 900;
+  }
+  .bottomTitle {
+    width: 140px;
+    height: 52px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(192, 61, 255, 1);
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}

@@ -1,0 +1,222 @@
+.Metahorse {
+  min-height: 600px;
+  .topTitle {
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+    gap: 20px;
+    width: 100%;
+
+    .title {
+      font-family: RNS Sanz;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding-left: 10px;
+    }
+    .title1 {
+      color: rgba(255, 255, 255, 1);
+    }
+    .title2 {
+      color: rgba(95, 61, 255, 1);
+    }
+    .text {
+      width: 400px;
+    }
+
+    #line1 {
+      width: 20%;
+      height: 2px;
+      position: relative;
+      top: 25px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+    #line2 {
+      width: 70%;
+      height: 2px;
+      position: relative;
+      top: 25px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+  }
+  .title3 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 20px;
+    top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    width: 400px;
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: RNS Sanz;
+  }
+  .bottomImg {
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+  }
+
+  .metahorseImg {
+    width: 1263px;
+    height: 631px;
+    display: flex;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .progressBar {
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+  }
+
+  .events li {
+    display: flex;
+    flex-direction: column;
+    color: #999;
+    /* max-width: 368px; */
+  }
+  .timeLine {
+    display: flex;
+    gap: 10px;
+  }
+  .textDiv {
+    max-width: 300px;
+  }
+
+  .events time {
+    position: relative;
+    padding: 0 1.5em;
+  }
+  .events {
+    display: flex;
+    gap: 10px;
+    width: 1440px;
+    margin-top: 50px;
+  }
+
+  .events span {
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0 1.5em 1.5em 1.5em;
+    position: relative;
+  }
+  .timeLine {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .timePointSVG {
+    background: url("../images/Timeline1.svg");
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+  }
+  .timePointLine {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .PointLine1 {
+    width: 380px;
+  }
+  .PointLine2 {
+    width: 360px;
+  }
+  .PointLine3,
+  .PointLine4 {
+    width: 200px;
+  }
+  .PointText2,
+  .PointLine3,
+  .PointLine4 {
+    max-width: 400px;
+  }
+  .events strong {
+    font-family: RNS Sanz;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 20px;
+    width: 400px;
+    display: block;
+
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .Metahorse {
+    .topTitle {
+      margin-top: 80px !important;
+    }
+    .title {
+      font-size: 30px !important;
+    }
+    .title3 {
+      top: 10px !important;
+      max-width: 350px;
+      font-size: 12px;
+    }
+    .textWrap {
+      width: 400px;
+    }
+    .imgTitle {
+      position: relative;
+      top: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .metahorseImg {
+      margin-top: -10px;
+      width: 800px;
+      height: 450px;
+    }
+    .PointLine1 {
+      width: 290px;
+    }
+    .PointLine2 {
+      width: 160px;
+    }
+    .PointLine3,
+    .PointLine4 {
+      width: 100px;
+    }
+    .PointLine3 {
+      margin-right: 160px;
+    }
+
+    .PointText2,
+    .PointText3,
+    .PointText4 {
+      display: none;
+    }
+    .events {
+      width: 936px;
+    }
+  }
+}
