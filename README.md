@@ -89,11 +89,10 @@ The code is kept for educational and research purposes only.
 - [Brian Patterson](https://www.linkedin.com/in/brian-patterson-71954b116/)
 - [Joe Carlino](https://www.linkedin.com/in/joe-carlino-28856b78/)
 - [Mark Laris](https://www.linkedin.com/in/mark-laris-805619a/)
+- [Kathleen Anays Lewis Barrios](https://www.linkedin.com/in/kathleen-anays-lewis-barrios-9a61bb273/)
 
 
 ## Extra Links
-
-- [Kathleen Anays Lewis Barrios](https://www.linkedin.com/in/kathleen-anays-lewis-barrios-9a61bb273/)
 
 - [SCAM WARNING: Blockchain developer job postings - on Reddit](https://www.reddit.com/r/Upwork/comments/14nat71/scam_warning_blockchain_developer_job_postings/)
 
