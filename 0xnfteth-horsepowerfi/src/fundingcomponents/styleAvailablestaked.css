@@ -1,0 +1,138 @@
+.AvailableStaked {
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  min-height: 620px;
+  .nftModals {
+    display: flex !important;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .nftModal1 {
+    width: 564px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    background: #191919;
+    border-radius: 22px;
+    display: flex !important;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .topTitle {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 50px;
+    .title {
+      font-family: RNS Sanz;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .title1 {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    #line {
+      width: 160px;
+      height: 1px;
+      position: relative;
+      top: 13px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+  }
+  .bottomTitle {
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    .imgTitle {
+      width: 198px;
+      height: 198px;
+      border-radius: 22px;
+      border: 1px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .imgTitle:hover {
+      cursor: pointer;
+    }
+    .imgTitles {
+      display: flex !important;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+}
+@media screen and (max-width: 1252px) {
+  .AvailableStaked {
+    .topTitle {
+      position: relative;
+      bottom: 30px;
+    }
+    .nftModals {
+      flex-direction: column;
+    }
+    .title {
+      font-size: 18px !important;
+    }
+    #line {
+      width: 120px !important;
+    }
+    .nftModal1 {
+      width: 400px;
+      margin-bottom: 40px;
+    }
+    .imgTitle {
+      width: 150px !important;
+      height: 150px !important;
+    }
+    .imgTitles {
+      gap: 20px !important;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .AvailableStaked {
+    .nftModals {
+      flex-direction: row !important;
+      gap: 20px;
+    }
+    .title {
+      font-size: 12px !important;
+    }
+    .nftModal1 {
+      width: 128px;
+    }
+    .imgTitle {
+      width: 90px !important;
+      height: 90px !important;
+    }
+    .imgTitles {
+      gap: 20px !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .topTitle {
+      .title {
+        font-family: RNS Sanz;
+        font-size: 10px;
+        font-weight: 900;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      #line {
+        width: 0px;
+      }
+    }
+  }
+}

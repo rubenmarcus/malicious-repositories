@@ -1,0 +1,103 @@
+.Nfts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  .topTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    .text {
+      display: flex;
+      justify-content: center;
+      width: 300px;
+    }
+    .title {
+      font-family: RNS Sanz;
+      font-size: 46px;
+      font-weight: 900;
+      line-height: 55px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .title1 {
+      color: rgba(255, 255, 255, 1);
+    }
+    .title2 {
+      color: rgba(95, 61, 255, 1);
+    }
+
+    #line1 {
+      width: 330px;
+      height: 1px;
+      position: relative;
+      top: 25px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+    #line2 {
+      width: 1300px;
+      height: 1px;
+      position: relative;
+      top: 25px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+  }
+  .middleTitle {
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .middleTitle span {
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    width: 455px;
+    text-align: center;
+  }
+  .btnTitle {
+    display: flex;
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1360px) {
+    .topTitle {
+      #line1 {
+        width: 500px !important;
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .topTitle {
+      #line1 {
+        width: 1000px !important;
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .topTitle {
+      #line1 {
+        width: 1300px !important;
+      }
+      .title {
+        font-size: 30px !important;
+      }
+    }
+  }
+}

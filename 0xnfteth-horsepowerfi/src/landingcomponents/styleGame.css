@@ -1,0 +1,216 @@
+.Games {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .topTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    .title {
+      font-family: RNS Sanz;
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 43px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .title1 {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    #line {
+      width: 500px;
+      height: 2px;
+      position: relative;
+      top: 25px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+  }
+  .topText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  #letter {
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 423px;
+  }
+  .imgTitle {
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  .GameImage {
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    width: 347px;
+    height: 347px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 5px;
+    left: 6px;
+
+    .boldText {
+      position: relative !important;
+      left: 33px !important;
+      align-items: center !important;
+      font-family: RNS Sanz;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(255, 255, 255, 1);
+    }
+    .lineText {
+      max-width: 240px !important;
+      position: relative !important;
+      left: 33px !important;
+      top: 10px !important;
+      font-family: RNS Sanz;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .bottomBtn:hover {
+      cursor: pointer;
+      background-image: linear-gradient(to right, #5f3dff, #c03dff);
+    }
+    .bottomBtn {
+      display: flex !important;
+      position: relative !important;
+      top: 80px;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 289px;
+      height: 47px;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: center !important;
+      background-image: linear-gradient(to right, #c03dff, #5f3dff);
+    }
+    .bottomBtn2:before {
+      backdrop-filter: blur(17px); /* Adjust the blur radius as needed */
+      position: absolute;
+      display: block;
+      content: "";
+      border-radius: 15px;
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      z-index: -100;
+    }
+    .bottomBtn2 {
+      z-index: 10;
+      display: flex !important;
+      position: relative !important;
+      top: 80px;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 289px;
+      height: 47px;
+      border-radius: 10px !important;
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center !important;
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      border: #5f3dff 1px solid;
+    }
+    .bottomBtn2:hover {
+      cursor: pointer;
+      color: white;
+    }
+
+    .buttonWrap {
+      display: flex !important;
+      justify-content: center !important;
+      margin-top: 20px;
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .Games {
+    .title {
+      font-size: 30px !important;
+    }
+    .text {
+      width: 248px;
+    }
+    .title3 {
+      top: 10px !important;
+      font-size: 12px;
+    }
+    .imgTitle {
+      position: relative;
+      top: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .topText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    #letter {
+      font-size: 12px;
+    }
+    .imgTitle {
+      gap: 10px;
+    }
+    .GameImage {
+      width: 270px;
+      height: 280px;
+    }
+    .boldText {
+      font-size: 20px !important;
+    }
+    .lineText {
+      font-size: 10px !important;
+    }
+    .bottomBtn {
+      top: 60px !important;
+      width: 240px !important;
+      height: 47px !important;
+    }
+    .bottomBtn2 {
+      top: 68px !important;
+      width: 240px !important;
+      height: 47px !important;
+    }
+  }
+}

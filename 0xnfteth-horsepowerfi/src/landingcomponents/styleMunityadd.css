@@ -1,0 +1,278 @@
+.Munityadd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 800px;
+  .topTitle {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    .text {
+      display: flex;
+      gap: 10px;
+    }
+    .title {
+      font-family: RNS Sanz;
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 43px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .title1 {
+      color: rgba(255, 255, 255, 1);
+    }
+    .title2 {
+      color: rgba(95, 61, 255, 1);
+    }
+
+    #line {
+      width: 330px;
+      height: 1px;
+      position: relative;
+      top: 25px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+  }
+  .middleTitle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .middleTitle span {
+    width: 733px;
+    text-align: center;
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+  }
+  .bottomImg {
+    position: relative;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+  .titleImg {
+    width: 540px;
+    height: 403px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .leftImg {
+    background-image: url("../images/Munityadd.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .rightImg {
+    background-image: url("../images/Munityadd2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .download {
+    border: 1px solid rgba(95, 61, 255, 1);
+    border-top: none;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    width: 540px;
+    height: 102px;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(17px);
+    border-radius: 0px 0px 24px 24px;
+    .Ltext {
+      font-family: RNS Sanz;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #fff;
+    }
+    .Rdown:hover {
+      cursor: pointer;
+      color: white;
+    }
+    .Rdown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 165px;
+      height: 51px;
+      background-color: #9933ff;
+      border-radius: 8px;
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .Rdown span {
+      position: relative;
+      left: 10px;
+    }
+  }
+  .borderTitle {
+    width: 540px;
+    height: 301px;
+    border: 1px solid rgba(95, 61, 255, 1) !important;
+    border-radius: 24px 24px 0px 0px;
+
+    /* border: 1px solid rgba(95, 61, 255, 1) red; */
+  }
+  .munityUpdate {
+    display: flex;
+    justify-content: center;
+  }
+  .updateDiv {
+    display: flex;
+    align-items: center;
+    width: 1160px;
+    height: 162px;
+    border-radius: 24px;
+    border: 1px solid rgba(95, 61, 255, 1);
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background: url(../images/Munityupdate.jpg);
+    padding: 60px;
+    justify-content: space-between;
+    backdrop-filter: blur(17px);
+    .Ltext {
+      font-family: RNS Sanz;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #fff;
+    }
+    .Rdown:hover {
+      cursor: pointer;
+      color: white;
+    }
+    .Rdown {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      width: 165px;
+      height: 51px;
+      background-color: #9933ff;
+      border-radius: 8px;
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .Rdown span {
+      position: relative;
+      left: 10px;
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .Munityadd {
+    .bottomImg {
+      position: relative;
+      top: 60px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .topTitle {
+      margin-top: 20px !important;
+    }
+    .title {
+      font-size: 30px !important;
+    }
+    .titleImg {
+      width: 380px;
+      height: 300px;
+      border-radius: 24px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .leftImg {
+      background-image: url("../images/Munityadd.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .rightImg {
+      background-image: url("../images/Munityadd2.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .download {
+      border: 1px solid rgba(95, 61, 255, 1);
+      border-top: none;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      width: 380px;
+      height: 102px;
+      display: flex;
+      justify-content: space-between;
+      backdrop-filter: blur(17px);
+      border-radius: 0px 0px 24px 24px;
+      .Ltext {
+        font-family: RNS Sanz;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+      }
+      .Rdown:hover {
+        cursor: pointer;
+        color: white;
+      }
+
+      .Rdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 165px;
+        height: 51px;
+        background-color: #9933ff;
+        border-radius: 8px;
+        font-family: RNS Sanz;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .Rdown span {
+        position: relative;
+        left: 10px;
+      }
+    }
+    .borderTitle {
+      width: 380px;
+      height: 301px;
+      border: 1px solid rgba(95, 61, 255, 1) !important;
+      border-radius: 24px 24px 0px 0px;
+
+      /* border: 1px solid rgba(95, 61, 255, 1) red; */
+    }
+  }
+}

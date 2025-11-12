@@ -1,0 +1,526 @@
+.EthereumModal {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 200px;
+  .centerModal {
+    margin-bottom: 50px;
+    width: 588px;
+    border-radius: 22px;
+    background-color: #131313;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    box-shadow: 0 4px 8px 0 #5a3af1, #2d2263 #5a3af1;
+  }
+
+  .prefix1 {
+    background: url(../images/Prefix1.png);
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 100;
+    background-position-x: -2px;
+    background-position-y: -1px;
+  }
+
+  .prefix1 span {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    font-size: 10px;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    font-weight: 900;
+    color: white;
+  }
+
+  .ethBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ethBtn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    width: 140px;
+    height: 51px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 10px;
+    color: #b8b8b8;
+  }
+  .ethBtn1:hover {
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .ethIconBtn {
+    background-image: linear-gradient(
+      to right,
+      #7335d6,
+      #7936d9,
+      #8b38e4,
+      #963aea
+    );
+    cursor: pointer;
+    border: none;
+    color: white;
+  }
+
+  .maxBtn {
+    background: url("../images/Maxsuffix.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100% 100%;
+    width: 70px;
+    height: 60px;
+    cursor: pointer;
+    position: relative;
+    right: 69px;
+    z-index: 100 !important;
+  }
+  .ethBtn4 {
+    align-items: self-start !important;
+    height: 60px !important;
+    width: 297px !important;
+  }
+  .ethBtn5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    background-image: linear-gradient(
+      to right,
+      #7335d6,
+      #7936d9,
+      #8b38e4,
+      #963aea
+    );
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 468px !important;
+    height: 51px !important;
+    border-radius: 8px !important;
+  }
+  .ethBtn5:hover {
+    cursor: pointer;
+    color: white;
+    border: 1px solid rgba(95, 61, 255, 1) !important;
+  }
+  .ethBtn6 {
+    width: 468px !important;
+    height: 51px !important;
+    border-radius: 8px !important;
+    flex-direction: row !important;
+  }
+  .infoBtn {
+    background: url("../images/info.svg");
+    background-repeat: no-repeat;
+    background-position-x: 6px;
+    background-position-y: 8px;
+  }
+
+  .ethBtn2 {
+    border: 1px solid #131313 !important;
+    display: flex !important;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 226px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #191919;
+    color: rgba(255, 255, 255, 0.7);
+    .iSpan {
+      font-family: RNS Sanz;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 12px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding: 5px;
+    }
+    .cSpan {
+      margin-bottom: 4px;
+      font-family: RNS Sanz;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(95, 61, 255, 1);
+    }
+  }
+  .ethBtn2:hover {
+    border: 1px solid rgba(95, 61, 255, 1) !important;
+    cursor: pointer;
+    color: white;
+  }
+  .unstakeBtn {
+    background-image: linear-gradient(
+      to right,
+      #7335d6,
+      #7936d9,
+      #8b38e4,
+      #963aea
+    );
+    height: 51px;
+    cursor: pointer;
+    border: none;
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .unstakeBtn:hover {
+    border: -1px solide #131313;
+  }
+  .availStake {
+    border: 1px solid #131313 !important;
+    display: flex !important;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 226px;
+    height: 70px;
+    border-radius: 15px;
+    color: white;
+
+    .iSpan {
+      font-family: RNS Sanz;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 12px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding: 5px;
+    }
+    .cSpan {
+      font-family: RNS Sanz;
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(95, 61, 255, 1);
+    }
+  }
+  .ethBtn:hover {
+    background-color: #8b38e4;
+    cursor: pointer;
+    border: none;
+    color: white;
+  }
+  .btnGroup {
+    display: flex;
+    padding-top: 36px;
+    justify-content: center;
+
+    align-items: center;
+    gap: 24px;
+
+    .wSpan {
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: white;
+    }
+    .inputBtn {
+      margin-left: 20px;
+      padding: 15px;
+    }
+    .setNumberGroup {
+      width: 200px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+    .setNumber {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2px;
+      color: white;
+    }
+    .cover1 {
+      font-family: RNS Sanz;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .cover2 {
+      font-family: RNS Sanz;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(95, 61, 255, 1);
+    }
+    .cover3 {
+      color: white !important;
+    }
+  }
+  .amountGroup {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 38px;
+    /* max-width: 400px; */
+    /* margin-left: 11px;
+    margin-right: 25px; */
+  }
+}
+.disconnetGp {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+  justify-content: center;
+}
+.disconnect:hover {
+  background: none !important;
+  border: none;
+  color: red !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.disconnect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  width: 468px;
+  height: 51px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  gap: 10px;
+}
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  .EthereumModal {
+    .centerModal {
+      width: 408px;
+      margin-top: -80px;
+      .amountGroup {
+        gap: 40px;
+        left: 30px;
+      }
+    }
+
+    .ethBtn4 {
+      align-items: self-start !important;
+      height: 50px !important;
+      width: 227px !important;
+    }
+    .ethBtn5 {
+      width: 340px !important;
+    }
+    .maxBtn {
+      height: 50px;
+      width: 55px;
+      position: relative;
+      left: -54.4px;
+    }
+    .unstakeBtn {
+      background-image: red;
+      width: 130px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+    }
+
+    .ethBtn1 {
+      font-size: 12px;
+      width: 100px;
+      height: 40px;
+    }
+    .firstGroup {
+      margin-top: 20px;
+    }
+
+    .ethBtn2 {
+      width: 166px;
+
+      .iSpan {
+        font-size: 10px;
+      }
+      .cSpan {
+        font-size: 16px;
+      }
+    }
+
+    .btnGroup {
+      gap: 14px;
+      padding-top: 15px;
+
+      .cover1 {
+        font-size: 10px;
+      }
+      .wSpan {
+        font-size: 12px;
+      }
+      .inputBtn {
+        margin-left: 0px;
+        height: 50px !important;
+        width: 200px !important;
+        font-size: 12px !important;
+      }
+
+      .prefix1 span {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        font-size: 10px;
+        position: absolute;
+
+        top: 2px;
+        left: 5px;
+        font-weight: 900;
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .EthereumModal {
+    .centerModal {
+      margin-top: -80px;
+      width: 312px;
+      .amountGroup {
+        gap: 10px;
+        left: 30px;
+      }
+      .ethIconBtn {
+        gap: 2px;
+      }
+    }
+    .prefix1 {
+      background-position-x: -9px;
+      background-position-y: -5px;
+    }
+    .prefix1 span {
+      top: -2px !important;
+      left: 2px !important;
+    }
+
+    .ethBtn4 {
+      align-items: self-start !important;
+      height: 50px !important;
+      width: 227px !important;
+    }
+    .ethBtn5 {
+      width: 260px !important;
+      height: 35px !important;
+      font-size: 12px;
+    }
+
+    .unstakeBtn {
+      width: 130px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      height: 35px !important;
+    }
+    .setNumberGroup {
+      width: 100px !important;
+    }
+    .ethBtn1 {
+      font-size: 9.3px;
+      width: 80px;
+      height: 30px;
+    }
+    .firstGroup {
+      margin-top: 20px;
+    }
+    .availStake {
+      width: 100px;
+      .iSpan {
+        text-align: center;
+      }
+    }
+
+    .ethBtn2 {
+      width: 132px;
+      height: 50px;
+
+      .iSpan {
+        font-size: 8px;
+      }
+      .cSpan {
+        font-size: 12px;
+      }
+    }
+
+    .btnGroup {
+      .infoBtn {
+        background-position-x: 4px;
+        background-position-y: 8px;
+        gap: 0px;
+      }
+      gap: 14px;
+      padding-top: 15px;
+
+      .cover1 {
+        font-size: 8px;
+      }
+      .wSpan {
+        font-size: 12px;
+      }
+      .inputBtn {
+        margin-left: 0px;
+        height: 40px !important;
+        width: 143px !important;
+        font-size: 10px !important;
+      }
+      .maxBtn {
+        height: 40px;
+        width: 45px;
+        position: relative;
+        left: -44.4px;
+      }
+
+      .prefix1 span {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        font-size: 8px;
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        font-weight: 900;
+        color: white;
+      }
+    }
+  }
+}

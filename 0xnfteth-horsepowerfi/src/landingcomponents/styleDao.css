@@ -1,0 +1,217 @@
+.Dao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .topTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+    .text {
+      display: flex;
+      gap: 10px;
+    }
+    .title {
+      font-family: RNS Sanz;
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 43px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .title1 {
+      color: rgba(255, 255, 255, 1);
+    }
+    .title2 {
+      color: rgba(95, 61, 255, 1);
+    }
+
+    #line {
+      width: 630px;
+      height: 2px;
+      position: relative;
+      top: 25px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+  }
+
+  .title3 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 20px;
+    top: 30px;
+    color: rgba(255, 255, 255, 0.4);
+    max-width: 700px;
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: RNS Sanz;
+  }
+  .bottomImg {
+    position: relative;
+    top: 100px;
+    left: 37px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    gap: 20px;
+  }
+  .rightText {
+    width: 472px;
+    display: flex;
+    flex-direction: column;
+    div {
+      margin-top: 20px;
+    }
+    .lgText {
+      font-family: RNS Sanz;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .type1 {
+      font-family: RNS Sanz;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(95, 61, 255, 1);
+    }
+    .type2 {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    .type3 {
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .type4 {
+      color: white;
+    }
+
+    .bottomBtn {
+      width: 472px;
+      height: 51px;
+      padding: 16px, 148px, 15px, 175px;
+      border-radius: 8px;
+      background-image: linear-gradient(
+        to right,
+        #7335d6,
+        #7936d9,
+        #8b38e4,
+        #963aea
+      );
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      color: rgb(255, 255, 255, 0.7);
+    }
+    .bottomBtn span {
+      position: relative;
+      left: 10px;
+      top: 2px;
+    }
+    .bottomBtn:hover {
+      cursor: pointer;
+      color: white;
+    }
+  }
+  .daoImg {
+    border: 1px solid #5f3dff;
+    width: 668px;
+    height: 420px;
+    display: flex;
+    border-radius: 15px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .Dao {
+    .title {
+      font-size: 30px !important;
+    }
+    .text {
+      width: 248px;
+    }
+    .title3 {
+      top: 10px !important;
+      font-size: 12px;
+    }
+    .bottomImg {
+      top: 50px !important;
+    }
+    .daoImg {
+      border: 1px solid #5f3dff;
+      width: 468px !important;
+      height: 320px !important;
+      display: flex;
+      border-radius: 15px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .rightText {
+      width: 400px !important;
+      display: flex;
+      flex-direction: column;
+      div {
+        margin-top: 20px;
+      }
+      .lgText {
+        font-size: 18px !important;
+      }
+
+      .type3 {
+        font-family: RNS Sanz;
+        font-size: 12px !important;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .type4 {
+        color: white;
+      }
+
+      .bottomBtn {
+        width: 390px !important;
+        height: 41px !important;
+        font-size: 14px !important;
+      }
+      .bottomBtn span {
+        position: relative;
+        left: 10px;
+        top: 2px;
+      }
+      .bottomBtn:hover {
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+}

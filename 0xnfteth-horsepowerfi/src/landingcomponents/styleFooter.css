@@ -1,0 +1,181 @@
+.footer {
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 156px;
+  width: 100%;
+  background: #131313;
+  border-top: 2px solid;
+  overflow: hidden;
+
+  border-image: linear-gradient(
+    to right,
+    rgba(192, 61, 255, 0.04),
+    rgba(95, 61, 255, 1),
+    rgba(192, 61, 255, 0.04)
+  );
+  .markFooter span {
+    display: none;
+  }
+  border-image-slice: 1;
+  z-index: 2;
+  .iconFooter1 {
+    margin-top: 30px;
+    display: flex;
+    gap: 16px;
+  }
+  .iconFooter2 {
+    display: none;
+  }
+  .linkFooter {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    right: 20px;
+    font-family: RNS Sanz;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .linkFooter img:hover {
+    cursor: pointer;
+  }
+  .iconFooter1 span {
+    font-family: Grandis Extended;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .leftFooter {
+    display: flex;
+    gap: 80px;
+  }
+
+  .linkFooter span:hover {
+    cursor: pointer;
+    color: white;
+  }
+  .iconF:hover {
+    cursor: pointer;
+  }
+  .markFooter {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1252px) {
+  .footer {
+    height: 240px;
+    .markFooter span {
+      display: none;
+    }
+    .linkFooter {
+      flex-direction: column;
+      position: absolute;
+      left: 320px;
+      width: 130px;
+    }
+    .iconFooter1 {
+      display: none;
+    }
+    .iconFooter2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px !important;
+      position: absolute;
+      right: 70px;
+    }
+    .iconFooter2 a {
+      margin: 5px;
+    }
+    .markFooter span {
+      font-family: RNS Sanz;
+      font-weight: 500;
+      line-height: 10px;
+      letter-spacing: 0em;
+      text-align: center;
+      display: block;
+      margin-top: 20px;
+    }
+    .markFooter img {
+      margin-left: 40px;
+    }
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .footer {
+    .linkFooter {
+      position: absolute;
+      left: 250px;
+      width: 130px;
+    }
+
+    .iconFooter2 {
+      position: absolute;
+      right: 70px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer {
+    height: 132px;
+    .markFooter span {
+      display: none;
+    }
+    .linkFooter {
+      flex-direction: column;
+      position: absolute;
+      left: 120px;
+      width: 80px;
+    }
+    .linkFooter span {
+      font-family: RNS Sanz;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 3px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .iconFooter1 {
+      display: none;
+    }
+    .iconFooter2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px !important;
+      position: absolute;
+      right: 10px;
+    }
+
+    .iconFooter2 a {
+      margin: 5px;
+    }
+    .iconF {
+      width: 28px;
+    }
+    .markFooter span {
+      display: block;
+      margin-top: 10px;
+      font-family: RNS Sanz;
+      font-size: 8px;
+      font-weight: 500;
+      line-height: 10px;
+      letter-spacing: 0em;
+      text-align: left;
+      position: relative;
+      right: 30px;
+    }
+    .markFooter img {
+      position: relative;
+      right: 30px;
+      margin-left: 10px;
+      width: 68px;
+    }
+  }
+}

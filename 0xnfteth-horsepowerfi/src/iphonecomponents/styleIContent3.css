@@ -1,0 +1,186 @@
+.IContent3 {
+  .topTitle {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+    .title {
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .title1 {
+      color: rgba(255, 255, 255, 1);
+    }
+    .title2 {
+      color: rgba(95, 61, 255, 1);
+    }
+
+    #line {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 70px;
+      height: 1px;
+      position: relative;
+      top: 25px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+    .text {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      max-width: 190px;
+    }
+  }
+  .title3 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 20px;
+    top: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 700px;
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: RNS Sanz;
+  }
+  .bottomImg {
+    position: relative;
+    top: 10px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+  }
+
+  .metahorseImg {
+    width: 100%;
+    height: 196.36px;
+    display: flex;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .progressBar {
+    width: 400px;
+    height: 20px;
+    justify-content: center;
+    transform: rotate(0deg);
+    position: relative;
+    top: -35px;
+  }
+  .letterWrap {
+    display: flex;
+    justify-content: center;
+  }
+  .letter {
+    max-width: 312px;
+    text-align: center;
+    color: white;
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: relative;
+    top: 5px;
+  }
+  .letterWrap2 {
+    display: flex;
+    justify-content: center;
+  }
+  .letter2 {
+    max-width: 312px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: RNS Sanz;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: relative;
+    top: 20px;
+  }
+
+  .events li {
+    display: flex;
+    flex-direction: column;
+    color: #999;
+    /* max-width: 368px; */
+  }
+  .timeLine {
+    display: flex;
+    gap: 2px;
+  }
+  .textDiv {
+    max-width: 300px;
+  }
+
+  .events time {
+    position: relative;
+    padding: 0 1.5em;
+  }
+  .events {
+    display: flex;
+    gap: 2px;
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .events span {
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0 1.5em 1.5em 1.5em;
+    position: relative;
+  }
+  .timeLine {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .timePointSVG {
+    background: url("../images/Timeline3.svg");
+    width: 5px;
+    height: 5px;
+    background-size: 100% 100%;
+  }
+  .timePointLine {
+    /* width: 330px; */
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .events strong {
+    font-family: RNS Sanz;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 20px;
+    width: 400px;
+    display: block;
+
+    color: rgba(255, 255, 255, 0.4);
+  }
+}

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-2%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 95%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+.Main {
+  display: none !important;
+}
+@media screen and (max-width: 1075px) {
+  .Main {
+    display: flex !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menuButton {
+    top: 11px !important;
+  }
+}

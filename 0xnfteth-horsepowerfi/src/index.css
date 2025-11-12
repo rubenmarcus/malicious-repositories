@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Krona One", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: "RNS Sanz";
+  src: url("../src/Fonts/RNS_Sanz/RNS_Sanz-WEB/RNS_Sanz-WOFF/RNSSanz-Black.woff")
+    format("woff");
+  /* src: url("../src/Fonts/RNSSanz/RNSSanz-Black.woff") format("woff"); */
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "RNS Sanz";
+  src: url("../src/Fonts/RNS_Sanz/RNS_Sanz-WEB/RNS_Sanz-WOFF/RNSSanz-Bold.woff")
+    format("woff");
+  font-weight: 700; /* Bold */
+}
+
+@font-face {
+  font-family: "RNS Sanz";
+  src: url("../src/Fonts/RNS_Sanz/RNS_Sanz-WEB/RNS_Sanz-WOFF/RNSSanz-ExtraBold.woff")
+    format("woff");
+  font-weight: 800; /* ExtraBold */
+}
+
+@font-face {
+  font-family: "RNS Sanz";
+  src: url("../src/Fonts/RNS_Sanz/RNS_Sanz-WEB/RNS_Sanz-WOFF/RNSSanz-Light.woff")
+    format("woff");
+  font-weight: 300; /* Light */
+}
+
+@font-face {
+  font-family: "RNS Sanz";
+  src: url("../src/Fonts/RNS_Sanz/RNS_Sanz-WEB/RNS_Sanz-WOFF/RNSSanz-Medium.woff")
+    format("woff");
+  font-weight: 500; /* Medium */
+}
+
+@font-face {
+  font-family: "RNS Sanz";
+  src: url("../src/Fonts/RNS_Sanz/RNS_Sanz-WEB/RNS_Sanz-WOFF/RNSSanz-Normal.woff")
+    format("woff");
+  font-weight: 400; /* Normal */
+}
+
+@font-face {
+  font-family: "RNS Sanz";
+  src: url("../src/Fonts/RNS_Sanz/RNS_Sanz-WEB/RNS_Sanz-WOFF/RNSSanz-SemiBold.woff")
+    format("woff");
+  font-weight: 600; /* SemiBold */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
