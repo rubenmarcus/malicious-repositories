@@ -221,6 +221,7 @@ To detect and prevent harmful code execution, use these tools:
 - [**package-checker**](https://github.com/dwisiswant0/package-checker) - Identifies typosquatting and suspicious packages.
 - [**de4js**](https://lelinhtinh.github.io/de4js/) - Online JavaScript deobfuscation tool.
 - [**Snyk**](https://snyk.io/) - Security scanning for dependencies.
+- [**Vulert**](https://vulert.com) - Vulert secures software by detecting vulnerabilities in open-source dependencies—without accessing your code. It supports Js, PHP, Java, Python, and more
 - [**GitGuardian**](https://www.gitguardian.com/) - Detects leaked API keys and credentials in codebases.
 - [**Codebase Scanner**](https://github.com/ajinabraham/CodebaseScanner) - Scans repositories for security issues.
 
