@@ -1,0 +1,214 @@
+.Art {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+  .topTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    .text {
+      width: 500px;
+      position: relative;
+      display: flex;
+      gap: 10px;
+    }
+    .title {
+      font-family: RNS Sanz;
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 43px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .title1 {
+      color: rgba(255, 255, 255, 1);
+    }
+    .title2 {
+      color: rgba(95, 61, 255, 1);
+    }
+    #line1 {
+      width: 250px;
+      height: 1px;
+      position: relative;
+      top: 25px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+    #line2 {
+      width: 935px;
+      height: 1px;
+      position: relative;
+      top: 25px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+  }
+
+  .title3 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 20px;
+    top: 30px;
+    color: rgba(255, 255, 255, 0.4);
+    max-width: 700px;
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: RNS Sanz;
+  }
+  .bottomImg {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    gap: 20px;
+  }
+  .rightText {
+    width: 472px;
+    display: flex;
+    flex-direction: column;
+    div {
+      margin-top: 20px;
+    }
+    .lgText {
+      font-family: RNS Sanz;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .type1 {
+      color: rgba(95, 61, 255, 1);
+    }
+    .type2 {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    .type3 {
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .bottomBtn:hover {
+      cursor: pointer;
+      color: white;
+    }
+    .bottomBtn {
+      width: 472px;
+      height: 51px;
+      padding: 16px, 167px, 15px, 194px;
+      border-radius: 8px;
+      angle: -180 deg;
+      background-color: #9239e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .bottomBtn span {
+      position: relative;
+      left: 10px;
+      top: 2px;
+    }
+  }
+  .daoImg {
+    width: 668px;
+    height: 422px;
+    border: 1px;
+    display: flex;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .Art {
+    .topTitle {
+      margin-top: 80px !important;
+    }
+    .title {
+      font-size: 30px !important;
+    }
+    .text {
+      width: 370px !important;
+    }
+    .title3 {
+      top: 10px !important;
+      max-width: 350px;
+      font-size: 12px;
+    }
+    .rightText {
+      width: 372px;
+      display: flex;
+      flex-direction: column;
+      div {
+        margin-top: 20px;
+      }
+      .lgText {
+        font-family: RNS Sanz;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .type1 {
+        color: rgba(95, 61, 255, 1) !important;
+      }
+      .type2 {
+        color: rgba(255, 255, 255, 1);
+        font-family: 700;
+      }
+
+      .type3 {
+        font-size: 12px;
+        line-height: 2px !important;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      .bottomBtn {
+        width: 372px;
+      }
+
+      .bottomBtn span {
+        position: relative;
+        left: 10px;
+        top: 2px;
+      }
+    }
+    .daoImg {
+      width: 420px !important;
+      height: 300px;
+    }
+  }
+}

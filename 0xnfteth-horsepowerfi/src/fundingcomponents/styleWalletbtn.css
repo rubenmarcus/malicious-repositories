@@ -1,0 +1,243 @@
+.disconnetGp {
+  .wallnetBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    width: 468px;
+    height: 51px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .wallnetBtn:hover {
+    background: none !important;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    color: red;
+  }
+}
+.another {
+  .topBarBtn {
+    display: flex;
+    justify-content: left;
+  }
+  /* .tabButton {
+    background-image: linear-gradient(
+      to right,
+      #7335d6,
+      #7936d9,
+      #8b38e4,
+      #963aea
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    width: 165px;
+    height: 51px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 10px;
+    margin-right: 30px;
+  } */
+  .tabButton2 {
+    background-image: none !important;
+    border: none;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    width: 165px;
+    height: 51px;
+    border-radius: 8px;
+    gap: 10px;
+    margin-right: 10px;
+  }
+  .tabButton2:hover {
+    background-image: linear-gradient(
+      to right,
+      #7335d6,
+      #7936d9,
+      #8b38e4,
+      #963aea
+    );
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* .tabButton:hover {
+    background: none !important;
+    border: none;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  } */
+  .colorloginBtn {
+    border: 1px;
+  }
+  .tabButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 8px;
+    moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .tabButton:hover {
+    background-position: 100% 0;
+    moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .tabButton:focus {
+    outline: none;
+  }
+
+  .tabButton.colortabBtn {
+    background-image: linear-gradient(
+      to right,
+      #6253e1,
+      #852d91,
+      #852d91,
+      #6253e1
+    );
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+    margin-right: 30px;
+  }
+  .tabButton.colorloginBtn {
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      transparent,
+      #6253e1,
+      #852d91
+    );
+    box-shadow: 0 1px 2px 0 #3c3c3c;
+    border: 1px solid #3c3c3c;
+  }
+  /* ////////////////////////////// */
+  /* .wallnetBtn {
+    background-image: linear-gradient(
+      to right,
+      #7335d6,
+      #7936d9,
+      #8b38e4,
+      #963aea
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    width: 328px;
+    height: 51px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 10px;
+    margin-right: 30px;
+  } */
+
+  /* .wallnetBtn:hover {
+    background: none !important;
+    border: none;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  } */
+}
+
+.contentFunding {
+  width: 100%;
+  background-color: #1e1a21;
+  overflow: hidden;
+}
+@media screen and (min-width: 283px) and (max-width: 360px) {
+  .another {
+    .wallnetBtn {
+      display: none;
+    }
+    /* .mediaWalletBtn {
+        position: relative;
+        right: 20px;
+        display: flex;
+        gap: 10px;
+      }
+      .mediaWalletBtn img:hover {
+        cursor: pointer;
+        background-color: #7836d9;
+        border-radius: 10px;
+      }
+
+      .mediaWalletBtn img {
+        width: 40px;
+      } */
+  }
+  .disconnetGp {
+    .wallnetBtn {
+      width: 280px;
+      height: 35px;
+    }
+  }
+}
+@media screen and (max-width: 283px) {
+  .another {
+    .wallnetBtn {
+      display: none;
+    }
+  }
+  .disconnetGp {
+    .wallnetBtn {
+      width: 200px;
+      height: 35px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 669px) {
+  .another {
+    .wallnetBtn {
+      display: none;
+    }
+  }
+
+  .disconnetGp {
+    .wallnetBtn {
+      width: 340px;
+    }
+  }
+}
+@media screen and (max-width: 1075px) {
+  .another {
+    .wallnetBtn {
+      display: none !important;
+    }
+    .tabButton {
+      display: none !important;
+    }
+  }
+}

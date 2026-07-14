@@ -1,0 +1,321 @@
+.SlideModal {
+  display: flex;
+  justify-content: center;
+  min-height: 600px;
+  .borderModal {
+    position: relative;
+    top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1180px;
+    height: 520px;
+    border-radius: 22px;
+    border: 1px;
+    background-color: #131313;
+    .Slide {
+      display: inline-block;
+      border-radius: 20px;
+    }
+    .Modal {
+      position: relative;
+      left: 40px;
+      width: 580px;
+      height: 424px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+      .btnGroup {
+        display: flex;
+        gap: 20px;
+        padding-top: 30px;
+      }
+      .tabButton:hover {
+        background: none !important;
+        border: none;
+        color: #ffffff !important;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .tabButton {
+        color: rgba(255, 255, 255, 0.7);
+        font-family: RNS Sanz !important;
+        font-weight: 700 !important;
+        width: 346px;
+        height: 51px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: linear-gradient(to right, #7536d7, #983aeb) !important;
+        gap: 10px;
+      }
+
+      .ethBtn {
+        border: 1px solid #131313;
+        background: url("../images/info2.png");
+        background-repeat: no-repeat;
+        background-position-x: 6px;
+        background-position-y: 7px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 190px;
+        height: 99px;
+        border-radius: 12px;
+        background-color: #191919;
+        color: rgba(255, 255, 255, 0.7);
+        .iSpan {
+          font-family: RNS Sanz;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 12px;
+          letter-spacing: 0em;
+          text-align: left;
+          padding: 5px;
+        }
+        .cSpan {
+          font-family: RNS Sanz;
+          font-size: 18px;
+          font-weight: 900;
+          line-height: 17px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(95, 61, 255, 1);
+        }
+      }
+      .ethBtn:hover {
+        border: 1px solid rgba(95, 61, 255, 1) !important;
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+  .Modal2 {
+    position: relative;
+    /* left: 40px; */
+    width: 580px;
+    height: 424px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .btnGroup {
+      display: flex;
+      gap: 20px;
+      padding-top: 30px;
+    }
+    #line1 {
+      width: 530px;
+      height: 1px;
+      position: relative;
+      top: 15px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+    }
+    #text1 {
+      font-family: RNS Sanz;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #ffffff;
+      padding-bottom: 20px;
+    }
+    #text2 {
+      font-family: RNS Sanz;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .tabButton:hover {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: none !important;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff !important;
+    }
+    .tabButton {
+      display: flex;
+      font-family: RNS Sanz !important;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #7536d7, #983aeb) !important;
+      width: 446px;
+      height: 51px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      gap: 10px;
+      font-weight: 700 !important;
+    }
+
+    .ethBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 164px;
+      height: 60px;
+      border-radius: 12px;
+      background-color: #191919;
+      color: rgba(255, 255, 255, 0.7);
+      .iSpan {
+        font-family: RNS Sanz;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 5px;
+      }
+      .cSpan {
+        font-family: RNS Sanz;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(95, 61, 255, 1);
+      }
+    }
+    .ethBtn:hover {
+      border: 1px solid rgba(95, 61, 255, 1) !important;
+      cursor: pointer;
+      color: white;
+    }
+  }
+}
+@media screen and (max-width: 1252px) {
+  .SlideModal {
+    .borderModal {
+      width: 590px;
+      height: 1050px;
+
+      flex-direction: column;
+      .Slide {
+        margin-top: -100px;
+      }
+      .btnGroup {
+        flex-direction: column !important;
+        position: relative;
+        right: 30px;
+      }
+      .btnGroup1 {
+        position: relative;
+        top: 40px;
+      }
+
+      .Modal {
+        position: relative;
+        justify-content: flex-start !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .SlideModal {
+    .borderModal {
+      width: 300px;
+      height: 670px;
+
+      flex-direction: column;
+      .text {
+        position: relative;
+        width: 300px !important;
+        margin: 40px;
+      }
+      #text2 {
+        font-size: 12px !important;
+        max-width: 280px;
+      }
+      #slideRBtn {
+        left: 125px !important;
+      }
+      #line1 {
+        width: 250px;
+      }
+      .loadingImg {
+        width: 272px;
+        background-size: 100% 100%;
+        height: 272px;
+      }
+      .ethBtn {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        padding: 20px;
+        width: 272px !important;
+        height: 43px !important;
+        background: #171617 !important;
+        border: 1px solid #131313;
+        margin-right: 20px;
+        border-right: 4px solid #9839eb !important;
+        .iSpan {
+          font-family: RNS Sanz;
+          font-size: 9px;
+          font-weight: 700;
+          line-height: 11px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        .cSpan {
+          font-family: RNS Sanz;
+          font-size: 9px;
+          font-weight: 700;
+          line-height: 11px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(95, 61, 255, 1);
+        }
+      }
+      .ethBtn:hover {
+        border: 1px solid rgba(95, 61, 255, 1) !important;
+        cursor: pointer;
+        color: white;
+      }
+      .Slide {
+        margin-top: 30px;
+        width: 272px;
+        height: 272px;
+      }
+      .btnGroup {
+        flex-direction: column !important;
+        position: relative;
+        right: 30px;
+      }
+      .btnGroup1 {
+        position: relative;
+        top: 40px;
+      }
+      .btnGroup2 {
+        flex-direction: row !important;
+      }
+
+      .Modal {
+        position: relative;
+        justify-content: flex-start !important;
+      }
+      .tabButton {
+        font-size: 10px !important;
+        font-family: RNS Sanz !important;
+        width: 227px !important;
+        height: 34px !important;
+        border-radius: 8px;
+        font-weight: 700 !important;
+      }
+    }
+  }
+}

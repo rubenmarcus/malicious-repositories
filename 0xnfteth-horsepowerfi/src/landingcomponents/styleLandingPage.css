@@ -1,0 +1,13 @@
+.LandingPage {
+  .IContent {
+    display: none;
+  }
+  @media screen and (max-width: 800px) {
+    .BContent {
+      display: none !important;
+    }
+    .IContent {
+      display: flex !important;
+    }
+  }
+}

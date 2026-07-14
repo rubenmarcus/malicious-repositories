@@ -1,0 +1,326 @@
+.Partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50px;
+  .topTitle {
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    gap: 20px;
+    .text {
+      display: flex;
+      gap: 10px;
+    }
+    .title {
+      font-family: RNS Sanz;
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 43px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .title1 {
+      color: rgba(255, 255, 255, 1);
+    }
+    .title2 {
+      color: rgba(95, 61, 255, 1);
+    }
+
+    #line {
+      width: 450px;
+      height: 1px;
+      position: relative;
+      top: 25px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+  }
+
+  .title3 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 20px;
+    top: 30px;
+    color: rgba(255, 255, 255, 0.4);
+    max-width: 700px;
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: RNS Sanz;
+  }
+  .classImg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .allImg {
+    opacity: 1;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 568px;
+    border-radius: 10% 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .rowImg {
+    z-index: 20;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 10px 5px;
+  }
+  .colImg {
+    background: rgba(19, 19, 19, 0.2);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 204px;
+    height: 80px;
+    border: 1px solid rgba(95, 61, 255, 1);
+    border-radius: 16px;
+    padding: 20px;
+  }
+  .Partner1Img {
+    width: 160px;
+  }
+  .Partner2Img {
+    height: 40px;
+  }
+  .Partner4Img {
+    width: 50px;
+    height: 50px;
+    bottom: 7px;
+    position: relative;
+  }
+  .Partner5Img {
+    height: 25px;
+    position: relative;
+    top: 8px;
+  }
+  .Partner6Img {
+    height: 30px;
+  }
+  .Partner7Img {
+    height: 55px;
+    position: relative;
+    bottom: 10px;
+  }
+  .Partner9Img {
+    width: 130px;
+  }
+  .Partner14Img {
+    width: 130px;
+  }
+  .Partner22Img {
+    width: 130px;
+  }
+  .Partner24Img {
+    position: relative;
+    top: 5px;
+    width: 130px;
+    height: 25px;
+  }
+  .Partner25Img {
+    position: relative;
+    width: 150px;
+    height: 23px;
+    margin-top: 5px;
+  }
+  .Partner26Img {
+    position: relative;
+    width: 130px;
+    height: 80px;
+    bottom: 22px;
+  }
+  .colImg:hover {
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .Partners {
+    .title {
+      font-size: 30px !important;
+    }
+    .text {
+      width: 290px;
+    }
+    .title3 {
+      top: 10px !important;
+      font-size: 12px;
+    }
+
+    .rowImg {
+      z-index: 20;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      padding: 10px 5px;
+    }
+    .colImg {
+      background: rgba(19, 19, 19, 0.2);
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      width: 154px;
+      height: 60px;
+      border: 1px solid rgba(95, 61, 255, 1);
+      border-radius: 16px;
+      padding: 15px;
+    }
+    .Partner1Img {
+      width: 130px;
+    }
+    .Partner2Img {
+      height: 40px;
+      position: relative;
+      bottom: 6px;
+    }
+    .Partner4Img {
+      width: 40px;
+      height: 40px;
+      bottom: 7px;
+      position: relative;
+    }
+    .Partner5Img {
+      height: 20px;
+      position: relative;
+      top: 5px;
+    }
+    .Partner7Img {
+      height: 40px;
+      position: relative;
+      top: -7px;
+    }
+
+    .Partner9Img {
+      width: 130px;
+    }
+    .Partner14Img {
+      width: 130px;
+    }
+    .Partner22Img {
+      width: 130px;
+    }
+    .Partner24Img {
+      position: relative;
+      top: 2px;
+      width: 120px;
+      height: 25px;
+    }
+    .Partner25Img {
+      position: relative;
+      width: 130px;
+      height: 20px;
+      margin-top: 4px;
+    }
+    .Partner26Img {
+      position: relative;
+      width: 130px;
+      height: 60px;
+      bottom: 18px;
+    }
+    .allImg {
+      height: 450px;
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .Partners {
+    .Partner1Img {
+      width: 130px;
+    }
+    .Partner2Img {
+      height: 40px;
+      position: relative;
+      bottom: 6px;
+    }
+    .Partner4Img {
+      width: 40px;
+      height: 40px;
+      bottom: 7px;
+      position: relative;
+    }
+    .Partner5Img {
+      height: 20px;
+      position: relative;
+      top: 5px;
+    }
+    .Partner6Img {
+      height: 22px;
+    }
+    .Partner7Img {
+      height: 40px;
+      position: relative;
+      top: -7px;
+    }
+
+    .Partner9Img {
+      width: 100px;
+    }
+    .Partner14Img {
+      width: 100px;
+      position: relative;
+      top: 2px;
+      height: 25px;
+    }
+    .Partner22Img {
+      width: 100px;
+    }
+    .Partner24Img {
+      position: relative;
+      top: 2px;
+      width: 120px;
+      height: 25px;
+    }
+    .Partner25Img {
+      position: relative;
+      width: 100px;
+      height: 18px;
+      margin-top: 4px;
+    }
+    .Partner26Img {
+      position: relative;
+      width: 130px;
+      height: 60px;
+      bottom: 18px;
+    }
+    .rowImg {
+      z-index: 20;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      padding: 10px 5px;
+    }
+    .colImg {
+      background: rgba(19, 19, 19, 0.2);
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      width: 124px;
+      height: 60px;
+      border: 1px solid rgba(95, 61, 255, 1);
+      border-radius: 12px;
+      padding: 15px;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.Munityjoin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .topTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+    .text {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      width: 300px;
+    }
+    .title {
+      font-family: RNS Sanz;
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .title1 {
+      color: rgba(255, 255, 255, 1);
+    }
+    .title2 {
+      color: rgba(95, 61, 255, 1);
+    }
+
+    #line {
+      width: 630px;
+      height: 1px;
+      position: relative;
+      top: 25px;
+      background-image: linear-gradient(
+        to right,
+        rgba(192, 61, 255, 0.04),
+        rgba(95, 61, 255, 1),
+        rgba(192, 61, 255, 0.04)
+      );
+    }
+  }
+  .middleTitle {
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .middleTitle span {
+    font-family: RNS Sanz;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    width: 455px;
+    text-align: center;
+  }
+  .middleTitle span::before {
+    content: "Staking is presently accessible on the Sepolia Testnet, where participants will receive proportional Munity Medal Points following the Token Generation Event (TGE) date for the Munity Token.";
+    font-family: RNS Sanz;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    width: 455px;
+    text-align: center;
+  }
+  .btnTitle {
+    display: flex;
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 490px) {
+  .Munityjoin {
+    .topTitle {
+      .text {
+        max-width: 208px;
+      }
+      .title {
+        font-family: RNS Sanz;
+        font-size: 18px !important;
+        font-weight: 900;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+      #line {
+        width: 100px !important;
+      }
+    }
+
+    .middleTitle span::before {
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore mmpor";
+      font-family: RNS Sanz;
+      font-size: 10px;
+      font-weight: 500;
+      text-align: center;
+    }
+    .middleTitle span {
+      max-width: 300px;
+    }
+  }
+}
