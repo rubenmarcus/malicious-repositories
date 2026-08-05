@@ -73,6 +73,7 @@ The code is kept for educational and research purposes only.
 - https://github.com/SuperDev313/Trading_Platform_Ultrax
 - https://bitbucket.org/web3_space/workspace/repositories/
 - https://bitbucket.org/0xnfteth/horsepowerfi/src/main/
+- https://github.com/Spherity-org/spherity-mvp
 
 ### Known scammer recruiter profiles
 
@@ -95,7 +96,15 @@ The code is kept for educational and research purposes only.
 - [Joe Carlino](https://www.linkedin.com/in/joe-carlino-28856b78/)
 - [Mark Laris](https://www.linkedin.com/in/mark-laris-805619a/)
 - [Kathleen Anays Lewis Barrios](https://www.linkedin.com/in/kathleen-anays-lewis-barrios-9a61bb273/)
+- [Manuela Figlia](https://www.linkedin.com/in/manuelafiglia/)
 
+### Known scammer recruiter e-mails
+
+- [veltrix.project.manager@gmail.com](veltrix.project.manager@gmail.com)
+
+### Known scammer scheduling links
+
+- https://calendly.com/project_overview/meeting
 
 ## Extra Links
 
